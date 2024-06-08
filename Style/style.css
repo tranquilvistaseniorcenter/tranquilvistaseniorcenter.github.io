@@ -1,0 +1,215 @@
+/*
+This is the generic style sheet used on all the pages
+*/
+
+#fullnav {
+  width: 80%;
+  max-width: 80%;
+  min-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  background-color: #c3cce8;
+  height: 72px;
+  z-index: 1000;
+}
+
+nav {
+  height: 100%;
+  width: calc(100% - 210px);
+  text-align: center;
+  background-color: #152A3D;
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 210px;
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
+}
+
+#logo {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+nav div {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  width: 150px;
+  height: 100%;
+  border-right: 2px solid lightgray;
+}
+
+nav div a {
+  color: white;
+  text-align: center;
+  height: 72px;
+  line-height: 72px;
+  width: 100%;
+  display: inline-block;
+}
+
+nav li a:hover {
+  background-color: #7d9dff;
+  color: white;
+}
+
+/*
+Active class is used to specify the current page
+*/
+.active {
+  background-color: #15648B;
+}
+
+body {
+  background-color: #F8F7F2;
+}
+
+#footer {
+  margin-top: 0;
+  background-color: #152A3D;
+  color: white;
+  font-size: 18px !important;
+  line-height: 1.5em !important;
+  height: 275px;
+  display: block;
+  padding-top: 20px;
+  padding-left: 4vw;
+  padding-right: 50px;
+}
+
+#footer img {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-height: 110px;
+}
+
+
+#footer-title {
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: White;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: goldenrod;
+}
+
+/*
+Media query section for device compatibility
+*/
+
+@media only screen and (max-width: 1300px) {
+	
+  #fullnav {
+    height: 50px;
+    margin-left: 0px;
+    width: 100%;
+    max-width: 100%;
+    left: 0%;
+  }
+
+  #logo {
+    height: 50px;
+    width: auto;
+  }
+
+  nav {
+    font-size: 20px;
+    height: 50px;
+    margin-left: 170px;
+  }
+
+  nav div {
+    width: 125px;
+    height: 50px;
+  }
+
+  nav div a {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .container {
+    margin-top: 50px;
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+	
+  #fullnav {
+    height: 45px;
+  }
+
+  #logo {
+    height: 45px;
+  }
+
+  nav {
+    font-size: 12px;
+    height: 45px;
+    margin-left: 140px;
+  }
+
+  nav div {
+    width: 80px;
+    height: 45px;
+  }
+
+  nav div a {
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .container {
+    margin-top: 45px;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  #fullnav {
+    height: 40px;
+  }
+
+  #logo {
+    height: 40px;
+  }
+
+  nav {
+    font-size: 12px;
+    height: 40px;
+    margin-left: 120px;
+  }
+
+  nav div {
+    width: 60px;
+    height: 40px;
+  }
+
+  nav div a {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+}
